@@ -4,33 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Document</title>
 </head>
 
 <body>
-    <h1 id="title">Microverse Survey exercise </h1>
-    <p id="description">Thank you for taking the time</p>
-    <form action="" id="survey-form">
-        <label for="name" id="name-label">Name</label>
-        <input type="text" id="name" placeholder="Adrian or Dean">
-        <label for="email" id="email-label">Email</label>
-        <input type="email" id="email" placeholder="something@something.else">
-        <label for="number" id="number-label">Number</label>
-        <input type="number" name="" id="number" min="5" max="10" placeholder="000000">
-        <select name="" id="dropdown">
-            <option value="">option 1</option>
-            <option value="">option 2</option>
-            <option value="">option 3</option>
-            <option value="">option 4</option>
-            <option value="">option 5</option>
-        </select>
-        <button id="submit">Sent</button>
-        <input type="radio" name="name1" value="value 1" id=""  class="input-checkbox">
-        <input type="radio" name="name1" value="value 2" id=""  class="input-checkbox">
-        <input type="checkbox" name="name1" value="value 3" id=""  class="input-checkbox">
-        <input type="checkbox" name="name1" value="value 4" id=""  class="input-checkbox">
-        <textarea id="comments" class="input-textarea" name="comments" placeholder="Comment here"> </textarea>
-       
+    <div class="pt-5 px-5">
+        <h1 id="title">Microverse Survey exercise </h1>
+        <p id="description">Thank you for taking the time</p>
+    </div>
+    <form action="" id="survey-form" class="p-5">
+        <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input class="form-control" type="text" id="name" placeholder="Adrian or Dean">
+        </div>
+        <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="something@something.else">
+        </div>
+        <div class="form-group">
+            <label for="number" id="number-label">Number</label>
+            <input type="number" class="form-control" name="" id="number" min="5" max="10" placeholder="000000">
+        </div>
+        <div class="form-group">
+            <select name="" id="dropdown" class="form-control">
+                <option value="">option 1</option>
+                <option value="">option 2</option>
+                <option value="">option 3</option>
+                <option value="">option 4</option>
+                <option value="">option 5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="radio" value="value 1" id="radio 1">
+                <label for="radio 1" class="form-check-label">radio 1</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="radio" value="value 2" id="radio 2">
+                <label for="radio 2" class="form-check-label">radio 2</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="name1" value="value 1" id="check1">
+                <label for="check1" class="form-check-label">check 1</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="name2" value="value 1" id="check2">
+                <label for="check2" class="form-check-label">check 2</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <textarea class="form-control" id="comments" class="input-textarea" name="comments" placeholder="Comment here"></textarea>
+        </div>
+        <button id="submit" class="btn btn-primary">Send</button>
     </form>
 </body>
 

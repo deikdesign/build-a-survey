@@ -1,0 +1,7 @@
+body{
+    background: linear-gradient(90deg, rgba(126,119,255,1) 0%, rgba(68,68,152,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+#title{
+    color: white;
+}
